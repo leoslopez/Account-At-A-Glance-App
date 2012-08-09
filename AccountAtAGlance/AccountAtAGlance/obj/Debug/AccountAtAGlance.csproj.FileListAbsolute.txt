@@ -1,0 +1,9 @@
+C:\Users\llopez\Documents\Visual Studio 2010\Projects\AccountAtAGlance\AccountAtAGlance\bin\AccountAtAGlance.dll
+C:\Users\llopez\Documents\Visual Studio 2010\Projects\AccountAtAGlance\AccountAtAGlance\bin\AccountAtAGlance.pdb
+C:\Users\llopez\Documents\Visual Studio 2010\Projects\AccountAtAGlance\AccountAtAGlance\bin\AccountAtAGlance.Model.dll
+C:\Users\llopez\Documents\Visual Studio 2010\Projects\AccountAtAGlance\AccountAtAGlance\bin\EntityFramework.dll
+C:\Users\llopez\Documents\Visual Studio 2010\Projects\AccountAtAGlance\AccountAtAGlance\bin\AccountAtAGlance.Model.pdb
+C:\Users\llopez\Documents\Visual Studio 2010\Projects\AccountAtAGlance\AccountAtAGlance\bin\EntityFramework.xml
+C:\Users\llopez\Documents\Visual Studio 2010\Projects\AccountAtAGlance\AccountAtAGlance\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\llopez\Documents\Visual Studio 2010\Projects\AccountAtAGlance\AccountAtAGlance\obj\Debug\AccountAtAGlance.dll
+C:\Users\llopez\Documents\Visual Studio 2010\Projects\AccountAtAGlance\AccountAtAGlance\obj\Debug\AccountAtAGlance.pdb
