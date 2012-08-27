@@ -8,8 +8,8 @@
     <ProjectGuid>{187CE903-46BC-4C14-91EC-16B756824414}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AccountAtAGlance.Repository</RootNamespace>
-    <AssemblyName>AccountAtAGlance.Repository</AssemblyName>
+    <RootNamespace>NewsAtAGlance.Repository</RootNamespace>
+    <AssemblyName>NewsAtAGlance.Repository</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -50,9 +50,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AccountAtAGlance.Model\AccountAtAGlance.Model.csproj">
+    <ProjectReference Include="..\NewsAtAGlance.Model\NewsAtAGlance.Model.csproj">
       <Project>{341079FC-EDCB-4C60-B0AB-4E693B10C1F7}</Project>
-      <Name>AccountAtAGlance.Model</Name>
+      <Name>NewsAtAGlance.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

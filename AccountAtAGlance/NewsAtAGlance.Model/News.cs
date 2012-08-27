@@ -18,6 +18,6 @@ namespace AccountAtAGlance.Model
         public string Date { get; set; }
         public string ClusterUrl { get; set; }
         
-        public int NewsUpdateId { get; set; }
+        //public int NewsUpdateId { get; set; }
     }
 }

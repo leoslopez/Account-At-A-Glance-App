@@ -11,10 +11,10 @@ namespace AccountAtAGlance.Repository
     public class NewsAtAGlance : DbContext
     {
         public DbSet<News> News { get; set; }
-        public DbSet<News> NewsUpdates { get; set; }
-        public DbSet<News> Languages { get; set; }
-        public DbSet<News> Locations { get; set; }
-        public DbSet<News> Sections { get; set; }
+        public DbSet<NewsUpdate> NewsUpdates { get; set; }
+        public DbSet<Language> Languages { get; set; }
+        public DbSet<Location> Locations { get; set; }
+        public DbSet<Section> Sections { get; set; }
 
         public NewsAtAGlance()
         {
