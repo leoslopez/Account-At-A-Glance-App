@@ -9,7 +9,7 @@ namespace AccountAtAGlance.Model
     public class Location
     {
         [Key]
-        public int LocationId { get; set; }
+        public string LocationCode { get; set; }
         public string Name { get; set; }
     }
 }

@@ -19,7 +19,7 @@ namespace AccountAtAGlance.Controllers
 
         public ActionResult CreateDatabase()
         {
-            NewsAtAGlance myDbContext = new NewsAtAGlance();
+            NewsContext myDbContext = new NewsContext();
 
             return View("Index");
         }

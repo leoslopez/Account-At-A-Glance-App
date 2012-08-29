@@ -9,7 +9,7 @@ namespace AccountAtAGlance.Model
     public class Language
     {
         [Key]
-        public int LanguageId { get; set; }
+        public string LanguageCode { get; set; }        
         public string Name { get; set; }
     }
 }

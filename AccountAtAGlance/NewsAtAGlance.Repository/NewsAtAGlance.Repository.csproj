@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="NewsAtAGlance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchemaInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NewsAtAGlance.Model\NewsAtAGlance.Model.csproj">

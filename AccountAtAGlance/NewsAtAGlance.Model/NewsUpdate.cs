@@ -11,7 +11,7 @@ namespace AccountAtAGlance.Model
         [Key]
         public int NewsUpdateId { get; set; }
 
-        public TimeSpan LastUpdate { get; set; }
+        public DateTime LastUpdate { get; set; }
 
         public int SectionId { get; set; }
         public int LocationId { get; set; }
