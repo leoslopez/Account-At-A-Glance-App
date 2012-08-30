@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NewsAtAGlance.cs" />
+    <Compile Include="NewsContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SchemaInitializer.cs" />
   </ItemGroup>
