@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.Entity;
-using AccountAtAGlance.Model;
+using NewsAtAGlance.Model;
 using System.Configuration;
 using NewsAtAGlance.Repository;
 
-namespace AccountAtAGlance.Repository
+namespace NewsAtAGlance.Repository
 {
     public class NewsContext : DbContext
     {

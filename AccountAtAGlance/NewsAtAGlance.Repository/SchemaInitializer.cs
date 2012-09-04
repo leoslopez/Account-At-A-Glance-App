@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.Entity;
-using AccountAtAGlance.Repository;
-using AccountAtAGlance.Model;
+using NewsAtAGlance.Repository;
+using NewsAtAGlance.Model;
 
 namespace NewsAtAGlance.Repository
 {
