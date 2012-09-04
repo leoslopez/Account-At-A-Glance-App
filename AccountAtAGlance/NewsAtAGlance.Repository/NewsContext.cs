@@ -21,14 +21,11 @@ namespace NewsAtAGlance.Repository
         {
             Database.Connection.ConnectionString = ConfigurationManager.ConnectionStrings[1].ToString();
             Database.CreateIfNotExists();
-
-            // TODO: this is not working, should be relocate into Glabal.asax in Application_Start method and verify again.
-            //Database.SetInitializer(new SchemaInitializer());        
         }
 
-        public int CleanNews(int newsUpdateId)
-        {
-            return Database.ExecuteSqlCommand("DeleteNews", newsUpdateId);
-        }
+        //public int CleanNews(int newsUpdateId)
+        //{
+        //    return Database.ExecuteSqlCommand("DeleteNews", newsUpdateId);
+        //}
     }
 }

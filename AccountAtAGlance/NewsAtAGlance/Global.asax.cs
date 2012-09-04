@@ -31,6 +31,9 @@ namespace NewsAtAGlance
 
         protected void Application_Start()
         {
+            // TODO: this create database way is not working, should be verified.
+            //Database.SetInitializer(new SchemaInitializer());        
+
             AreaRegistration.RegisterAllAreas();
 
             RegisterGlobalFilters(GlobalFilters.Filters);
