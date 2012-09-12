@@ -1,7 +1,16 @@
-﻿@{
+﻿@model IEnumerable<NewsAtAGlance.Model.Location>
+@{
     ViewBag.Title = "News At A Glance";
 }
 
 <h2>News At A Glance</h2>
 
-<a href="/Home/CreateDatabase">Create Database</a>
+@*TODO: unnecessary code to verify database deployment in appHarbor. It should be removed.*@
+@using (@Html.BeginForm("Index", "List", FormMethod.Get))
+{
+    <p>
+        Location: @Html.DropDownList("location", new SelectList(ViewBag.Locations), "All")        
+    </p>
+}
+
+

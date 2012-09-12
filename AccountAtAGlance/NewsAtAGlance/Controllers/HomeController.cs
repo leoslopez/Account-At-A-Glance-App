@@ -9,20 +9,16 @@ namespace NewsAtAGlance.Controllers
 {
     public class HomeController : Controller
     {
-        //
-        // GET: /Home/
+        NewsRepository _newsRepository = new NewsRepository();
 
         public ActionResult Index()
         {
+            //TODO: unnecessary code to verify database deployment in appHarbor. It should be removed.
+            var locations = _newsRepository.GetAllLocations().Select(l => l.Name);
+            ViewBag.Locations = locations;
+
             return View();
-        }
-
-        public ActionResult CreateDatabase()
-        {
-            NewsContext myDbContext = new NewsContext();
-
-            return View("Index");
-        }
+        }        
 
     }
 }
