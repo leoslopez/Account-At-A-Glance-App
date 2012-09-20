@@ -22,10 +22,5 @@ namespace NewsAtAGlance.Repository
             Database.Connection.ConnectionString = ConfigurationManager.ConnectionStrings[1].ToString();
             Database.CreateIfNotExists();
         }
-
-        //public int CleanNews(int newsUpdateId)
-        //{
-        //    return Database.ExecuteSqlCommand("DeleteNews", newsUpdateId);
-        //}
     }
 }
