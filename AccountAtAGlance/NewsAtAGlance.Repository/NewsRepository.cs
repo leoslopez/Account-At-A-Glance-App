@@ -89,10 +89,5 @@ namespace NewsAtAGlance.Repository
 
             return true;
         }
-
-        public List<Location> GetAllLocations()
-        {
-            return Context.Locations.ToList<Location>();
-        }
     }
 }

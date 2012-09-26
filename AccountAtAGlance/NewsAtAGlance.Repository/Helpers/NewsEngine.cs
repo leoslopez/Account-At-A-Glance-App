@@ -4,6 +4,7 @@ using NewsAtAGlance.Model;
 using System.IO;
 using System.Net;
 using System.Xml;
+using System.Text;
 
 namespace AccountAtAGlance.Model.Repository.Helpers
 {
@@ -22,7 +23,7 @@ namespace AccountAtAGlance.Model.Repository.Helpers
         
         private XmlDocument CreateDoc(string language, string section)
         {
-            //Encoding enc = Encoding.GetEncoding("iso-8859-1");
+            Encoding enc = Encoding.GetEncoding("iso-8859-1");
 
             string url = string.Concat(BASE_URL, SECTION_FILTER, section, LANGUAGE_FILTER, language);
 
@@ -30,8 +31,7 @@ namespace AccountAtAGlance.Model.Repository.Helpers
             WebResponse response = request.GetResponse();
 
             Stream dataStream = response.GetResponseStream();
-            //StreamReader reader = new StreamReader(dataStream, enc);
-            StreamReader reader = new StreamReader(dataStream);
+            StreamReader reader = new StreamReader(dataStream, enc);
             string responseFromServer = reader.ReadToEnd();
 
             reader.Close();
@@ -54,6 +54,9 @@ namespace AccountAtAGlance.Model.Repository.Helpers
                     News aNew = new News();
                     aNew.Title = item.SelectSingleNode("title").Attributes["data"].InnerText;
                     aNew.Url = item.SelectSingleNode("url").Attributes["data"].InnerText;
+                    aNew.Snippet = item.SelectSingleNode("snippet").Attributes["data"].InnerText;
+                    aNew.Source = item.SelectSingleNode("source").Attributes["data"].InnerText;
+                    aNew.ClusterUrl = item.SelectSingleNode("cluster_url").Attributes["data"].InnerText;
 
                     news.Add(aNew);
                 }

@@ -1,16 +1,25 @@
-﻿@model IEnumerable<NewsAtAGlance.Model.Location>
+﻿@model IEnumerable<NewsAtAGlance.Model.News>
 @{
     ViewBag.Title = "News At A Glance";
 }
 
 <h2>News At A Glance</h2>
 
-@*TODO: unnecessary code to verify database deployment in appHarbor. It should be removed.*@
-@using (@Html.BeginForm("Index", "List", FormMethod.Get))
-{
-    <p>
-        Location: @Html.DropDownList("location", new SelectList(ViewBag.Locations), "All")        
-    </p>
-}
 
+<table class="newsTable">
+<tr>
+    <th>Title</th>
+    <th>Detail</th>
+</tr>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <a href="@item.Url">@item.Title</a>            
+        </td>
+        <td>
+            <span>@item.Snippet</span>            
+        </td>
+    </tr>
+}
+</table>
 

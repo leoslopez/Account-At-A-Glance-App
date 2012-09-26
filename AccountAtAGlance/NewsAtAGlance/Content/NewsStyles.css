@@ -1,0 +1,15 @@
+﻿.newsTable 
+{
+    width: 100%;
+    border: 1px solid Gray;
+}
+
+.newsTable th 
+{
+    background-color: #D0F5A9;
+}
+
+.newsTable tr:nth-child(odd) 
+{
+    background-color: #E6E6E6;    
+}

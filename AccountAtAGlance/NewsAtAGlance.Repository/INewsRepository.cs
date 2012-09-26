@@ -8,6 +8,7 @@ namespace NewsAtAGlance.Repository
 {
     public interface INewsRepository
     {
-        List<Location> GetAllLocations();
+        List<News> GetNews(string language, string section, bool localDataOnly);
+        bool InsertNews(List<News> newsToInsert);        
     }
 }
