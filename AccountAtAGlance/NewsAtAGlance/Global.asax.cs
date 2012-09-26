@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using AccountAtAGlance.Repository;
+using Unity.Mvc3;
+
 
 namespace NewsAtAGlance
 {
@@ -38,6 +41,10 @@ namespace NewsAtAGlance
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            //Dependency resolver
+            var container = ModelContainer.Instance;            
+            DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }
 }
