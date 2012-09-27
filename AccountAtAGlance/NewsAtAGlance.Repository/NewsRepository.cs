@@ -48,8 +48,9 @@ namespace NewsAtAGlance.Repository
         {
             if (newsToInsert != null && newsToInsert.Count > 0)
             {
-                using (var transaction = new TransactionScope())
-                {
+                //TODO: verify transactions using again
+                //using (var transaction = new TransactionScope())
+                //{
                     using (Context)
                     {
                         DeleteNews(Context);
@@ -69,8 +70,8 @@ namespace NewsAtAGlance.Repository
                         }
                     }
 
-                    transaction.Complete();
-                }
+                //    transaction.Complete();
+                //}
             }
 
             return true;
