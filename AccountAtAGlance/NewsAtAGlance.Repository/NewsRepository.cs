@@ -8,7 +8,7 @@ using System.Transactions;
 
 namespace NewsAtAGlance.Repository
 {
-    public class NewsRepository : INewsRepository
+    public class NewsRepository : INewsRepository, IDisposable
     {
         private NewsContext _context;
 
@@ -89,6 +89,11 @@ namespace NewsAtAGlance.Repository
             }
 
             return true;
+        }
+
+        public void Dispose()
+        {
+            if (Context != null) Context.Dispose();
         }
     }
 }
