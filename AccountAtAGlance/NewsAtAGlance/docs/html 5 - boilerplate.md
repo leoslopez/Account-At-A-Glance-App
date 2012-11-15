@@ -15,7 +15,7 @@ Al visitar el [sitio](http://html5boilerplate.com/) tienes 3 opciones: descargar
 	> Como se recomienda en las especificaciones de HTML5, se debe agregar la 
 	declaración de "charset" tempranamente (antes de cualquier ASCII) para evitar un potencial problema de seguridad relacionado al encoding en IE.
 
-	> El charset debería, además, aparecer antes del <title>, para evitar 
+	> El charset debería, además, aparecer antes del &lt;title> para evitar 
 		un potencial [XSS vectors]( http://code.google.com/p/doctype-mirror/wiki/ArticleUtf7 ).
 
 	> El meta tag que define la comptibilidad necesita estar antes que todos 
@@ -27,8 +27,8 @@ Al visitar el [sitio](http://html5boilerplate.com/) tienes 3 opciones: descargar
 		Entonces, para solucionar esto, se usa: <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	> El meta tag le dice al motor de renderizado de IE 2 cosas:
-		 * Debería usar la última version (edge) del motor de renderizado.
-		 * Si está instalado debería usar el motor de renderizado Google Chrome Frame.
+		 1) Debería usar la última version (edge) del motor de renderizado.
+		 2) Si está instalado debería usar el motor de renderizado Google Chrome Frame.
 
 	> Este meta tag asegura que cualquiera que "browsee" tu sitio será "recibido" con la mejor expriencia de usuario posible que su browser pueda ofrecer.
 
