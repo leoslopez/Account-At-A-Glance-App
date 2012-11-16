@@ -1,0 +1,19 @@
+﻿.tile { margin:2px; position: absolute; background-color: #ffffff; border: 1px solid #ccc; overflow: hidden;
+        -moz-box-shadow: 3px 3px 6px #333; -webkit-box-shadow: 3px 3px 6px #333; box-shadow: 3px 3px 6px #333; }  
+        
+.tile .content { margin: 5px 10px; overflow: hidden; color:#333; }
+.tile:hover { box-shadow: 0 0 15px #888; -webkit-box-shadow: 0 0 15px #888; -moz-box-shadow: 0 0 15px #888; -o-box-shadow: 0 0 15px #888;}        
+.tile:hover { -ms-transform: scale(1.02, 1.02) }        
+.tile header { font-size: 24px; font-weight:bold; color:#333; width:100%; float:left; padding: 0px 0px 5px 0px; }      
+.tile header:hover { cursor:move; }
+.tile header span { float: left; text-transform: uppercase; }  
+.tile header span:nth-child(2) { font-size: 9pt; float:right;  margin: 4px 8px 2px 0px; }        
+        
+.tile section { margin-top:35px; }
+
+.tile footer{ }
+.tile footer span { font-weight:bold; }
+
+.tile .stickyfooter { clear: both; position:absolute; bottom: 0px; padding: 5px 5px; width: 100%; }
+.tile .stickyfooter .Right {padding-right: 20px;}
+.tile .smallblock { background-color: #dedede;  }

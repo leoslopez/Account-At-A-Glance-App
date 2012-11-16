@@ -156,6 +156,7 @@
     <Content Include="Content\themes\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
     <Content Include="Content\themes\ui-lightness\images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\themes\ui-lightness\jquery-ui-1.8.9.css" />
+    <Content Include="Content\TileStyles.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="README.jQuery.vsdoc.txt" />
@@ -164,10 +165,21 @@
     <Content Include="Scripts\Libs\jquery-1.7.2.min.js" />
     <Content Include="Scripts\Libs\jquery-ui-1.8.22.js" />
     <Content Include="Scripts\Libs\jquery-ui-1.8.22.min.js" />
+    <Content Include="Scripts\Libs\jquery.easing.1.3.js" />
+    <Content Include="Scripts\Libs\jQuery.tmpl.js" />
+    <Content Include="Scripts\Libs\jQuery.tmpl.min.js" />
     <Content Include="Scripts\Libs\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\Libs\jquery.validate.js" />
     <Content Include="Scripts\Libs\jquery.validate.min.js" />
     <Content Include="Scripts\Libs\modernizr-2.5.2.min.js" />
+    <Content Include="Scripts\ScenesHandlers\scene.dataservice.js" />
+    <Content Include="Scripts\ScenesHandlers\scene.layoutservice.js" />
+    <Content Include="Scripts\ScenesHandlers\scene.startup.js" />
+    <Content Include="Scripts\ScenesHandlers\scene.statemanager.js" />
+    <Content Include="Scripts\ScenesHandlers\scene.tile.binder.js" />
+    <Content Include="Scripts\ScenesHandlers\scene.tile.formatter.js" />
+    <Content Include="Scripts\ScenesHandlers\scene.tile.renderer.js" />
+    <Content Include="Templates\News.html" />
     <Content Include="Unity.Mvc3.README.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

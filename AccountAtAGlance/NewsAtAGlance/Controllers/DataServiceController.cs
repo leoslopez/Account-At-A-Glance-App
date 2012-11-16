@@ -16,9 +16,10 @@ namespace NewsAtAGlance.Controllers
             _NewsRepository = newsRepo;
         }
 
+        // TODO: verify parameters
         public ActionResult GetNews(int locationId, int languageId, int sectionId)
-        {
-            return null;
-        }
+        {            
+            return Json(_NewsRepository.GetNews("es", sectionId.ToString(), false) , JsonRequestBehavior.AllowGet);
+        }        
     }
 }
