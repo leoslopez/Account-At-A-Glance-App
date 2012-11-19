@@ -1,15 +1,26 @@
-﻿@model IEnumerable<NewsAtAGlance.Model.News>
-@{
+﻿@*@model IEnumerable<NewsAtAGlance.Model.News>*@
+@*@{
     ViewBag.Title = "News At A Glance";
-}
+}*@
 
-<h2>News At A Glance</h2>
+@*<h2>News At A Glance</h2>*@
 
 <div id="container">       
          
-    @*<div id="left" class="scroller"></div>
-    <div id="right" class="scroller"></div>*@
-    <div id="content" style="background-color:#088A29"></div>
+    <div id="header">
+        <div id="newslogo">
+            <img src="/Content/Images/makingSenseLogo.png" />
+        </div>
+        <div id="newsTopRight">
+            @*<div id="buttons">
+                <img id="gridButton" disabled class="unselected" src="/Content/Images/grid.png" />
+                <img id="cloudButton" class="enabled" src="/Content/Images/cloud.png" />
+            </div>*@
+        </div>
+    </div>
+    <div id="left" class="scroller"></div>
+    <div id="right" class="scroller"></div>
+    <div id="content" style="border-style:double; border-color:White" ></div>
     
 </div>
 

@@ -21,9 +21,9 @@ var sceneStateManager = function () {
             tileDiv.appendTo('#content');
 
             //TODO: add this code to handle top row scrolling
-            //            if (index < 8) {
-            //                tileDiv.addClass('top-row');
-            //            }
+                        if (index < 8) {
+                            tileDiv.addClass('top-row');
+                        }
 
             tileDiv.draggable({ opacity: 0.9, zIndex: 5000, revert: 'invalid', revertDuration: 500 });
             tileDiv.droppable({
@@ -35,8 +35,20 @@ var sceneStateManager = function () {
         });
 
         //TODO: add this code to handle top row scrolling
-        //        $('#left').click(slideRight);
-        //        $('#right').click(slideLeft);
+                $('#left').click(slideRight);
+                $('#right').click(slideLeft);
+    },
+
+    slideLeft = function () {
+        $('.top-row').animate({ 'left': '-=200px' }, 800, function () {
+            $(this).data().scenes[sceneId].left -= 200;
+        });
+    },
+
+    slideRight = function () {
+        $('.top-row').animate({ 'left': '+=200px' }, 800, function () {
+            $(this).data().scenes[sceneId].left += 200;
+        });
     },
 
 
@@ -58,7 +70,7 @@ var sceneStateManager = function () {
         //            newsIndex++;
         //        });
 
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i <= 5; i++) {
             renderTile(data[i], $('#News' + (i + 1)), 0);            
         }
     },

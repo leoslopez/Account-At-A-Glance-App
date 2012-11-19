@@ -13,7 +13,7 @@ var tileFormatter = new function () {
 
         lblNewsTitle.text(tileDiv.data().tileData.Title);
         lnkNews.attr('href', tileDiv.data().tileData.Url);
-        lnkNews.text('(leer la nota...)');
+        lnkNews.text(' (leer nota completa)');
         //lblNewsSnippet.text(tileDiv.data().tileData.Snippet);
     };
 
