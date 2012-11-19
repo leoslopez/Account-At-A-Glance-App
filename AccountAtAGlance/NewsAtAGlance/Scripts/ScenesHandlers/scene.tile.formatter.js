@@ -10,11 +10,13 @@ var tileFormatter = new function () {
         var lblNewsTitle = $('#lblNewsTitle', tileDiv);
         var lnkNews = $('#lnkNews', tileDiv);
         var lblNewsSnippet = $('#lblNewsSnippet', tileDiv);
+        var spNewsSource = $('#spNewsSource', tileDiv);
 
         lblNewsTitle.text(tileDiv.data().tileData.Title);
-        lnkNews.attr('href', tileDiv.data().tileData.Url);
-        lnkNews.text(' (leer nota completa)');
-        //lblNewsSnippet.text(tileDiv.data().tileData.Snippet);
+        lnkNews.attr('href', tileDiv.data().tileData.Url);        
+        lblNewsSnippet.text(tileDiv.data().tileData.Snippet);
+        spNewsSource.text(tileDiv.data().tileData.Source);
+
     };
 
     return {

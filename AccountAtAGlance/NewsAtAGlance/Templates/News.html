@@ -1,46 +1,41 @@
 ﻿<script id="NewsTemplate_Small" type="text/x-jquery-tmpl">
     <div class="content">
-        <header style="background-color:Gray; font-weight:bold">
-            <span>News Small</span>
+        <header>            
+            <span id="spNewsSource"></span>
         </header>
         <section>            
-            <label id="lblNewsTitle"></label>
-            <div id="NewsDataContainer"></div>
+            <label id="lblNewsTitle"></label>            
         </section>        
-        <footer>
-            &nbsp;
-        </footer>
     </div>
 </script>
 
 <script id="NewsTemplate_Medium" type="text/x-jquery-tmpl">
     <div class="content">
-        <header style="background-color:Gray; font-weight:bold">
-            <span>News Medium</span>
+        <header>
+            <span id="spNewsSource"></span>
         </header>
         <section>            
-            <label id="lblNewsTitle" style="word-wrap: break-word"></label>
-            <a id="lnkNews" class="anchorCompleteNews"></a>
-            <label id="lblNewsSnippet" style="word-wrap: break-word"></label>
-            <div id="NewsDataContainer"></div>
+            <label id="lblNewsTitle"></label>            
         </section>        
-        <footer>
-            &nbsp;
+        <footer>            
+            <a id="lnkNews">(Noticia Completa)</a>
         </footer>
     </div>
 </script>
 
 <script id="NewsTemplate_Large" type="text/x-jquery-tmpl">
-    <div class="content">
-        <header style="background-color:Gray; font-weight:bold">
-            <span>News Large</span>
+     <div class="content">
+        <header>
+            <span id="spNewsSource"></span>
         </header>
         <section>            
-            <label id="lblNewsTitle"></label>
-            <div id="NewsDataContainer"></div>            
+            <label id="lblNewsTitle" style="font-weight:bold"></label>
+            <div id="NewsDataContainer">
+                <label id="lblNewsSnippet" style="word-wrap: break-word"></label>
+            </div>
         </section>        
-        <footer>
-            &nbsp;
+        <footer>            
+            <a id="lnkNews">(Noticia Completa)</a>
         </footer>
     </div>
 </script>

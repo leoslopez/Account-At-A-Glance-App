@@ -98,8 +98,3 @@ textarea
 #newsTopRight #buttons {margin-top: 19px;}
 #newsTopRight #buttons .enabled {opacity:.2;}
 #newsTopRight #buttons .enabled:hover {cursor:pointer}
-
-.anchorCompleteNews
-{
-    color: #D935D9;
-}

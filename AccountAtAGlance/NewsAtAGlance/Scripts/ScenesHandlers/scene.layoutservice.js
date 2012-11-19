@@ -27,7 +27,7 @@ var sceneLayoutService = function () {
                     [
                         { name: 'News 1',
                             tileId: 'News1',
-                            formatter: tileFormatter.formatNews,
+                            formatter: tileFormatter.formatNews,                            
                             scenes: [
                                 { height: s1Mh, width: s1Mw, top: 0, left: 0, opacity: 1, size: 1, borderColor: '#B40431', z: 0 },
                                 { height: 90, width: 210, top: 80, left: 250, size: 0, borderColor: '#B40431', z: '2000', opacity: .5 }
@@ -74,8 +74,17 @@ var sceneLayoutService = function () {
                             tileId: 'News6',
                             formatter: tileFormatter.formatNews,                            
                             scenes: [
-                                { height: s1Mh, width: s1Mw, top: 0, left: s1Mw + s1Mw2 + s1Mw3 + s1Sw + (pad * 4), opacity: 1, size: 0, borderColor: '#113E6F', z: 0 },
+                                { height: s1Mh, width: s1Mw, top: 0, left: s1Mw + s1Mw2 + s1Mw3 + s1Sw + (pad * 4), opacity: 1, size: 1, borderColor: '#113E6F', z: 0 },
                                 { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: '#113E6F', opacity: .65, z: '2000' }
+                            ]
+                        },
+
+                        { name: 'News 7',
+                            tileId: 'News7',
+                            formatter: tileFormatter.formatNews,
+                            scenes: [
+                                { height: s1Lh, width: s1Lw, top: s1Mh + pad * 2, left: 0, opacity: 1, size: 2, borderColor: '#E0CB38', z: 0 },
+                                { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: '#E0CB38', opacity: .65, z: '2000' }
                             ]
                         }
                     ]

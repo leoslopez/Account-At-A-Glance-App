@@ -19,11 +19,10 @@ var sceneStateManager = function () {
 
             moveTile(tileDiv, this.scenes[sceneId]);
             tileDiv.appendTo('#content');
-
-            //TODO: add this code to handle top row scrolling
-                        if (index < 8) {
-                            tileDiv.addClass('top-row');
-                        }
+            
+            if (index < 6) {
+                tileDiv.addClass('top-row');
+            }
 
             tileDiv.draggable({ opacity: 0.9, zIndex: 5000, revert: 'invalid', revertDuration: 500 });
             tileDiv.droppable({
@@ -33,10 +32,9 @@ var sceneStateManager = function () {
                 }
             });
         });
-
-        //TODO: add this code to handle top row scrolling
-                $('#left').click(slideRight);
-                $('#right').click(slideLeft);
+        
+        $('#left').click(slideRight);
+        $('#right').click(slideLeft);
     },
 
     slideLeft = function () {
@@ -63,14 +61,7 @@ var sceneStateManager = function () {
 
 
     renderNewsTiles = function (data) {
-        //        var newsIndex = 0;
-        //        $('div.tile[id^="News"]').each(function () {
-        //            var tileDiv = $(this);
-        //            renderTile(data[newsIndex], tileDiv, 0);
-        //            newsIndex++;
-        //        });
-
-        for (var i = 0; i <= 5; i++) {
+        for (var i = 0; i <= 6; i++) {
             renderTile(data[i], $('#News' + (i + 1)), 0);            
         }
     },
@@ -128,20 +119,19 @@ var sceneStateManager = function () {
         moveTile(source, targetScene);
 
         swapScenes(sourceScene, targetScene);
-
-        // TODO: add code to handle tiles swap when they are displaying in grid way
-        //        if (sceneId == 0) {
-        //            //handle top row scrolling
-        //            var sourceTopRow = source.hasClass('top-row');
-        //            var targetTopRow = target.hasClass('top-row');
-        //            if (sourceTopRow && !targetTopRow) {
-        //                source.removeClass('top-row');
-        //                target.addClass('top-row');
-        //            } else if (!sourceTopRow && targetTopRow) {
-        //                target.removeClass('top-row');
-        //                source.addClass('top-row');
-        //            }
-        //        }
+        
+        if (sceneId == 0) {
+            //handle top row scrolling
+            var sourceTopRow = source.hasClass('top-row');
+            var targetTopRow = target.hasClass('top-row');
+            if (sourceTopRow && !targetTopRow) {
+                source.removeClass('top-row');
+                target.addClass('top-row');
+            } else if (!sourceTopRow && targetTopRow) {
+                target.removeClass('top-row');
+                source.addClass('top-row');
+            }
+        }
 
         //resize
         var sourceSize = sourceScene.size;
