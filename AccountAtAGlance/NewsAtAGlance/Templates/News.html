@@ -1,10 +1,10 @@
 ﻿<script id="NewsTemplate_Small" type="text/x-jquery-tmpl">
     <div class="content">
         <header>            
-            <span id="spNewsSource"></span>
+            <span id="spNewsSource">${Source}</span>
         </header>
-        <section style="margin-top:10px">            
-            <label id="lblNewsTitle"></label>            
+        <section>            
+            <label id="lblNewsTitle">${Title}</label>            
         </section>        
     </div>
 </script>
@@ -12,13 +12,13 @@
 <script id="NewsTemplate_Medium" type="text/x-jquery-tmpl">
     <div class="content">
         <header>
-            <span id="spNewsSource"></span>
+            <span id="spNewsSource">${Source}</span>
         </header>
         <section>            
-            <label id="lblNewsTitle"></label>            
+            <label id="lblNewsTitle">${Title}</label>            
         </section>        
         <footer style="margin-top:10px">            
-            <a id="lnkNews">(Noticia Completa)</a>
+            <a id="lnkNews" href="${Url}">(Noticia Completa)</a>
         </footer>
     </div>
 </script>
@@ -26,16 +26,16 @@
 <script id="NewsTemplate_Large" type="text/x-jquery-tmpl">
      <div class="content">
         <header>
-            <span id="spNewsSource"></span>
+            <span id="spNewsSource">${Source}</span>
         </header>
         <section>            
-            <label id="lblNewsTitle" style="font-weight:bold"></label>
+            <label id="lblNewsTitle" style="font-weight:bold">${Title}</label>
             <div id="NewsDataContainer" style="margin-top:10px">
-                <label id="lblNewsSnippet" style="word-wrap: break-word"></label>
+                <label id="lblNewsSnippet" style="word-wrap: break-word">${Snippet}</label>
             </div>
         </section>        
         <footer style="margin-top:10px">            
-            <a id="lnkNews">(Noticia Completa)</a>
+            <a id="lnkNews" href="${Url}">(Noticia Completa)</a>
         </footer>
     </div>
 </script>
