@@ -24,7 +24,7 @@ Al visitar el [sitio](http://html5boilerplate.com/) tienes 3 opciones: descargar
 * X-UA-Compatible
 
 	> Esto asegura que la última version de IE es usada en versiones de IE que contienen multiples motores de renderizado. Aun, si se estuviese usando IE8 o IE9, es posible que ellos no esten usando el último motor de renderizado que el browser contiene.
-		Entonces, para solucionar esto, se usa: <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		Entonces, para solucionar esto, se usa: &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	> El meta tag le dice al motor de renderizado de IE 2 cosas:
 		 1) Debería usar la última version (edge) del motor de renderizado.
