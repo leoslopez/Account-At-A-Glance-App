@@ -1,9 +1,9 @@
 ﻿<script id="NewsTemplate_Small" type="text/x-jquery-tmpl">
     <div class="content">
-        <header>            
+        <header style="padding: 5px 0px 1px 5px; background-color:#B3CDE1;">            
             <span id="spNewsSource">${Source}</span>
         </header>
-        <section>            
+        <section style="margin-top:35px;">            
             <label id="lblNewsTitle">${Title}</label>            
         </section>        
     </div>
@@ -11,31 +11,31 @@
 
 <script id="NewsTemplate_Medium" type="text/x-jquery-tmpl">
     <div class="content">
-        <header>
+        <header style="padding: 5px 0px 1px 5px; background-color:#B3CDE1;">
             <span id="spNewsSource">${Source}</span>
         </header>
-        <section>            
+        <section style="margin-top:35px;">            
             <label id="lblNewsTitle">${Title}</label>            
         </section>        
-        <footer style="margin-top:10px">            
-            <a id="lnkNews" href="${Url}">(Noticia Completa)</a>
+        <footer style="margin-top:10px;">            
+            <a id="lnkNews" href="${Url}" style="-moz-border-radius: 3px; border-radius: 3px;">(Noticia Completa)</a>
         </footer>
     </div>
 </script>
 
 <script id="NewsTemplate_Large" type="text/x-jquery-tmpl">
      <div class="content">
-        <header>
+        <header style="padding: 5px 0px 1px 5px; background-color:#B3CDE1;">
             <span id="spNewsSource">${Source}</span>
         </header>
-        <section>            
+        <section style="margin-top:35px;">            
             <label id="lblNewsTitle" style="font-weight:bold">${Title}</label>
-            <div id="NewsDataContainer" style="margin-top:10px">
+            <div id="NewsDataContainer" style="margin-top:10px; background-color: #C9EAC6; border: gray solid 1px; -moz-border-radius: 3px; border-radius: 3px;">
                 <label id="lblNewsSnippet" style="word-wrap: break-word">${Snippet}</label>
             </div>
         </section>        
         <footer style="margin-top:10px">            
-            <a id="lnkNews" href="${Url}">(Noticia Completa)</a>
+            <a id="lnkNews" href="${Url}" style="-moz-border-radius: 3px; border-radius: 3px;">(Noticia Completa)</a>
         </footer>
     </div>
 </script>

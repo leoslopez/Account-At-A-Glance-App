@@ -23,8 +23,13 @@ var tileFormatter = new function () {
 
     };
 
+    formatTeams = function (tileDiv) {
+        
+    };
+
     return {
-        formatNews: formatNews
+        formatNews: formatNews,
+        formatTeams: formatTeams
     };
 
 } ();

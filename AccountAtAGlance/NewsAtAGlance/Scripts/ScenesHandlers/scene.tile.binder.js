@@ -6,8 +6,8 @@ var tileBinder = function () {
 
     bind = function (tileDiv, data, renderer) {
 
-        //var tileName = tileDiv.attr('id');
-        var tileName = tileDiv.attr('id').substring(0, 4) == 'News' ? 'News' : tileDiv.attr('id');
+        //var tileName = tileDiv.attr('id');        
+        var tileName = tileDiv.attr('id').substring(0, 4) == 'News' ? 'News' : tileDiv.attr('id').substring(0, 4) == 'Team' ? 'Team' : tileDiv.attr('id');
 
         $.get(templateBase + tileName + '.html', function (templates) {
 

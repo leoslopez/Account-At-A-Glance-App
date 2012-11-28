@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\NewsEngine.cs" />
+    <Compile Include="Helpers\TeamsHelper.cs" />
     <Compile Include="INewsRepository.cs" />
     <Compile Include="ModelContainer.cs" />
     <Compile Include="NewsContext.cs" />

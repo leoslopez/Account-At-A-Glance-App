@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using NewsAtAGlance.Repository;
+using NewsAtAGlance.Repository.Helpers;
 
 namespace NewsAtAGlance.Controllers
 {
@@ -20,6 +21,11 @@ namespace NewsAtAGlance.Controllers
         public ActionResult GetNews(int locationId, int languageId, int sectionId)
         {            
             return Json(_NewsRepository.GetNews("es", sectionId.ToString(), false) , JsonRequestBehavior.AllowGet);
-        }        
+        }
+        
+        public ActionResult GetTeams()
+        {
+            return Json(new TeamsHelper().GetTeams(), JsonRequestBehavior.AllowGet);
+        }
     }
 }

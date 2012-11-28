@@ -79,6 +79,16 @@ var sceneLayoutService = function () {
                             ]
                         },
 
+                        { name: 'Team 1',
+                            tileId: 'Team1',
+                            formatter: tileFormatter.formatTeams,
+                            scenes: [
+                            { height: s1Sh, width: s1Sw, top: 0, left: s1Mw + s1Mw2 + s1Mw3 + s1Sw + s1Mw + (pad * 5), opacity: 1, size: 0, borderColor: 'red', z: 0 },
+                                //{height: s1Sh, width: s1Sw, top: 0, left: 0, opacity: 1, size: 0, borderColor: 'red', z: 0 },
+                                { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: 'red', opacity: .65, z: '2000' }
+                            ]
+                        },
+
                         { name: 'News 7',
                             tileId: 'News7',
                             formatter: tileFormatter.formatNews,

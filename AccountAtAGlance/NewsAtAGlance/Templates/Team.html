@@ -1,0 +1,50 @@
+﻿<script id="TeamTemplate_Small" type="text/x-jquery-tmpl">
+    <div class="content">
+        <header>
+        </header>
+        <section>
+            <div>
+				<div style="float:left;">
+					<img src="/Content/Images/${FileImgName}" />
+				</div>
+				<div style="text-align:center">
+					<span id="spTeamName" style="font-weight:bold">${Name}</span>					                    
+					<span id="spPosition" style="font-weight:bold">${ActualPosition}°</span>
+                    <br>
+                    <span id="spPoints" style="font-weight:bold">${ActualPoints} puntos</span>
+				</div>
+			<div>      
+        </section>        
+    </div>
+</script>
+
+<script id="TeamTemplate_Medium" type="text/x-jquery-tmpl">
+    <div class="content">
+        <header>
+            <span id="spNewsSource">${Source}</span>
+        </header>
+        <section>            
+            <label id="lblNewsTitle">${Title}</label>            
+        </section>        
+        <footer style="margin-top:10px">            
+            <a id="lnkNews" href="${Url}">(Noticia Completa)</a>
+        </footer>
+    </div>
+</script>
+
+<script id="TeamTemplate_Large" type="text/x-jquery-tmpl">
+     <div class="content">
+        <header>
+            <span id="spNewsSource">${Source}</span>
+        </header>
+        <section>            
+            <label id="lblNewsTitle" style="font-weight:bold">${Title}</label>
+            <div id="NewsDataContainer" style="margin-top:10px">
+                <label id="lblNewsSnippet" style="word-wrap: break-word">${Snippet}</label>
+            </div>
+        </section>        
+        <footer style="margin-top:10px">            
+            <a id="lnkNews" href="${Url}">(Noticia Completa)</a>
+        </footer>
+    </div>
+</script>

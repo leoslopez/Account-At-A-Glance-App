@@ -19,8 +19,8 @@ var sceneStateManager = function () {
 
             moveTile(tileDiv, this.scenes[sceneId]);
             tileDiv.appendTo('#content');
-            
-            if (index < 6) {
+
+            if (index < 7) {
                 tileDiv.addClass('top-row');
             }
 
@@ -32,7 +32,7 @@ var sceneStateManager = function () {
                 }
             });
         });
-        
+
         $('#left').click(slideRight);
         $('#right').click(slideLeft);
     },
@@ -54,6 +54,7 @@ var sceneStateManager = function () {
     renderTiles = function (locId, langId, sectId) {
 
         dataService.getNews(locId, langId, sectId, renderNewsTiles);
+        dataService.getTeams(renderTeamsTiles);
 
         //TODO: add renderize to default tiles
         //renderDefaultTiles();
@@ -62,7 +63,13 @@ var sceneStateManager = function () {
 
     renderNewsTiles = function (data) {
         for (var i = 0; i <= 6; i++) {
-            renderTile(data[i], $('#News' + (i + 1)), 0);            
+            renderTile(data[i], $('#News' + (i + 1)), 0);
+        }
+    },
+
+    renderTeamsTiles = function (data) {
+        for (var i = 0; i <= 0; i++) {
+            renderTile(data[i], $('#Team' + (i + 1)), 0);
         }
     },
 
@@ -119,7 +126,7 @@ var sceneStateManager = function () {
         moveTile(source, targetScene);
 
         swapScenes(sourceScene, targetScene);
-        
+
         if (sceneId == 0) {
             //handle top row scrolling
             var sourceTopRow = source.hasClass('top-row');

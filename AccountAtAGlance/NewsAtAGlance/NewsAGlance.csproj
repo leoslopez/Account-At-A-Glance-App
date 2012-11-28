@@ -86,6 +86,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\escudoRiver.jpg" />
     <Content Include="Content\Images\left_arrow.png" />
     <Content Include="Content\Images\makingSenseLogo.png" />
     <Content Include="Content\Images\right_arrow.png" />
@@ -183,6 +184,7 @@
     <Content Include="Scripts\ScenesHandlers\scene.tile.binder.js" />
     <Content Include="Scripts\ScenesHandlers\scene.tile.formatter.js" />
     <Content Include="Scripts\ScenesHandlers\scene.tile.renderer.js" />
+    <Content Include="Templates\Team.html" />
     <Content Include="Templates\News.html" />
     <Content Include="Unity.Mvc3.README.txt" />
     <Content Include="Web.config">

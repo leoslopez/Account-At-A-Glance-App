@@ -10,9 +10,16 @@ var dataService = new function () {
             callback(data);
         });
     };
+    
+    getTeams = function (callback) {
+        $.getJSON(serviceBase + 'GetTeams', null, function (data) {
+            callback(data);
+        });
+    };
 
     return {
-        getNews: getNews
+        getNews: getNews,
+        getTeams: getTeams
     };
 
 } ();
