@@ -20,7 +20,7 @@ var sceneStateManager = function () {
             moveTile(tileDiv, this.scenes[sceneId]);
             tileDiv.appendTo('#content');
 
-            if (index < 7) {
+            if (index < 8) {
                 tileDiv.addClass('top-row');
             }
 
@@ -68,7 +68,7 @@ var sceneStateManager = function () {
     },
 
     renderTeamsTiles = function (data) {
-        for (var i = 0; i <= 0; i++) {
+        for (var i = 0; i <= 1; i++) {
             renderTile(data[i], $('#Team' + (i + 1)), 0);
         }
     },
