@@ -86,6 +86,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\escudoBoca.jpg" />
     <Content Include="Content\Images\escudoRiver.jpg" />
     <Content Include="Content\Images\left_arrow.png" />
     <Content Include="Content\Images\makingSenseLogo.png" />
