@@ -22,30 +22,41 @@
 <script id="TeamTemplate_Medium" type="text/x-jquery-tmpl">
     <div class="content">
         <header>
-            <span id="spNewsSource">${Source}</span>
         </header>
-        <section>            
-            <label id="lblNewsTitle">${Title}</label>            
+        <section>
+            <div>
+				<div style="float:left;">
+					<img src="/Content/Images/${FileImgName}" />
+				</div>
+				<div style="color:${TextColor}">
+					<span id="spTeamName" style="font-weight:bold; padding-left:10px">${Name}</span>
+                    <br/>
+                    <br/>
+					<span id="spPosition" style="padding-left:14px" >Posicion: ${ActualPosition}°</span>                    
+                    <span id="spPoints" style="padding-left:14px">Puntos: ${ActualPoints}</span>
+				</div>
+			<div>      
         </section>        
-        <footer style="margin-top:10px">            
-            <a id="lnkNews" href="${Url}">(Noticia Completa)</a>
-        </footer>
     </div>
 </script>
 
 <script id="TeamTemplate_Large" type="text/x-jquery-tmpl">
      <div class="content">
-        <header>
-            <span id="spNewsSource">${Source}</span>
+        <header>            
+			<div style="color:${TextColor}">
+				<span id="spTeamName" style="font-weight:bold; padding-left:10px">${Name}</span>
+                <br/>                
+				<span id="spPosition" style="padding-left:10px; font-size:small" >Posicion: ${ActualPosition}°</span>                    
+                <span id="spPoints" style="padding-left:10px; font-size:small">Puntos: ${ActualPoints}</span>
+			</div>			
         </header>
+
         <section>            
-            <label id="lblNewsTitle" style="font-weight:bold">${Title}</label>
-            <div id="NewsDataContainer" style="margin-top:10px">
-                <label id="lblNewsSnippet" style="word-wrap: break-word">${Snippet}</label>
-            </div>
+            <div id="progressPositionCanvas${GraphName}" class="canvas"></div>
         </section>        
-        <footer style="margin-top:10px">            
-            <a id="lnkNews" href="${Url}">(Noticia Completa)</a>
+
+        <footer style="margin-top:10px">
+
         </footer>
     </div>
 </script>
