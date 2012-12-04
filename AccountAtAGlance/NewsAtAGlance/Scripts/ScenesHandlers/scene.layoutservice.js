@@ -15,12 +15,12 @@ var sceneLayoutService = function () {
         s1Sw = 264,
         //medium
         s1Mh = 197,
-        s1Mw = 365,
-        s1Mw2 = 270,
-        s1Mw3 = 320
+        s1Mw = 290,
+        s1Mw2 = 230,
+        s1Mw3 = 270
         //large
         s1Lh = 340,
-        s1Lw = 584,
+        s1Lw = 484,
 
         // TODO: reuse tiles related to News. All of them have a same format.
         items = { tiles:
@@ -65,26 +65,26 @@ var sceneLayoutService = function () {
                             tileId: 'News3',
                             formatter: tileFormatter.formatNews,
                             scenes: [
-                                { height: s1Mh, width: s1Mw3, top: 0, left: s1Sw + s1Mw + s1Mw2 + (pad * 3), opacity: 1, size: 1, borderColor: '#FF8000', z: 0 },
-                                { height: 90, width: 110, top: 380, left: 150, size: 0, borderColor: '#FF8000', z: '2000', opacity: .5 }
+                                { height: s1Sh, width: s1Sw, top: 0, left: s1Sw + s1Mw + s1Mw2 + (pad * 3), opacity: 1, size: 0, borderColor: '#37D753', z: 0 },
+                                { height: 90, width: 200, top: 60, left: 870, size: 0, borderColor: '#37D753', opacity: .7 }    
                             ]
                         },
 
                         { name: 'News 4',
                             tileId: 'News4',
-                            formatter: tileFormatter.formatNews,                            
+                            formatter: tileFormatter.formatNews,
                             scenes: [
-                            { height: s1Sh, width: s1Sw, top: 0, left: s1Sw + s1Mw + s1Mw2 + s1Mw3 + (pad * 4), opacity: 1, size: 0, borderColor: '#37D753', z: 0 },
-                            { height: 90, width: 200, top: 60, left: 870, size: 0, borderColor: '#37D753', opacity: .7 }
-                        ]
+                                { height: s1Sh2, width: s1Sw, top: s1Sh + (pad * 1.8), left: s1Sw + s1Mw + s1Mw2 + (pad * 3), opacity: 1, size: 0, borderColor: '#800080', z: 0 },
+                                { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: '#800080', opacity: .65, z: '2000' }
+                            ]
                         },
 
                         { name: 'News 5',
                             tileId: 'News5',
-                            formatter: tileFormatter.formatNews,                            
+                            formatter: tileFormatter.formatNews,
                             scenes: [
-                                { height: s1Sh2, width: s1Sw, top: s1Sh + (pad * 1.8), left: s1Sw + s1Mw + s1Mw2 + s1Mw3 + (pad * 4), opacity: 1, size: 0, borderColor: '#800080', z: 0 },
-                                { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: '#800080', opacity: .65, z: '2000' }
+                                { height: s1Mh, width: s1Mw3, top: 0, left: s1Sw + s1Mw + s1Mw2 + s1Sw + (pad * 4), opacity: 1, size: 1, borderColor: '#FF8000', z: 0 },
+                                { height: 90, width: 110, top: 380, left: 150, size: 0, borderColor: '#FF8000', z: '2000', opacity: .5 }                                
                             ]
                         },
 

@@ -171,13 +171,16 @@
     <Content Include="Scripts\Libs\jquery-ui-1.8.22.js" />
     <Content Include="Scripts\Libs\jquery-ui-1.8.22.min.js" />
     <Content Include="Scripts\Libs\jquery.easing.1.3.js" />
+    <Content Include="Scripts\Libs\jquery.flot.js" />
     <Content Include="Scripts\Libs\jquery.Scroller-1.0.min.js" />
     <Content Include="Scripts\Libs\jQuery.tmpl.js" />
     <Content Include="Scripts\Libs\jQuery.tmpl.min.js" />
-    <Content Include="Scripts\Libs\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\Libs\jquery.validate.js" />
-    <Content Include="Scripts\Libs\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\Libs\modernizr-2.5.2.min.js" />
+    <Content Include="Scripts\Libs\raphael-min.js" />
+    <Content Include="Scripts\Libs\raphael-pie.js" />
     <Content Include="Scripts\ScenesHandlers\scene.dataservice.js" />
     <Content Include="Scripts\ScenesHandlers\scene.layoutservice.js" />
     <Content Include="Scripts\ScenesHandlers\scene.startup.js" />
@@ -197,16 +200,16 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Scripts\Libs\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\Libs\jquery.unobtrusive-ajax.min.js" />
-    <Content Include="Scripts\Libs\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\Libs\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\Libs\MicrosoftAjax.js" />
-    <Content Include="Scripts\Libs\MicrosoftAjax.debug.js" />
-    <Content Include="Scripts\Libs\MicrosoftMvcAjax.js" />
-    <Content Include="Scripts\Libs\MicrosoftMvcAjax.debug.js" />
-    <Content Include="Scripts\Libs\MicrosoftMvcValidation.js" />
-    <Content Include="Scripts\Libs\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
