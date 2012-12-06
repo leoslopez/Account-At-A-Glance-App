@@ -50,8 +50,8 @@ var tileFormatter = new function () {
                 grid: { hoverable: true, autoHighlight: true },
                 legend: { position: 'se' },
 
-                // Explaination for tickFormatter definition: Max value on axis Y is replaced by custom string: 'Posicion'. The same to the axis X.
-                yaxis: { max: maxY, min: 1, tickFormatter: function (val, axis) { return val < axis.max ? val.toFixed(0) : "Posición"; } },                
+                // Explaination for tickFormatter definition: Max value on axis Y is replaced by custom string: 'Pos.'. The same to the axis X.
+                yaxis: { max: maxY, min: 1, tickFormatter: function (val, axis) { return val < axis.max ? val.toFixed(0) : "Pos."; } },                
                 xaxis: { max: maxX, min: 1, tickFormatter: function (val, axis) { return val < axis.max ? val.toFixed(0) : "Fecha"; } }
             };
 

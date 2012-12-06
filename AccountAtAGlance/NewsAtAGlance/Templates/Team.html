@@ -4,16 +4,19 @@
         </header>
         <section>
             <div>
-				<div style="float:left;">
+				<div style="float:left; margin-right:20px">
 					<img src="/Content/Images/${FileImgName}" />
 				</div>
-				<div style="color:${TextColor}">
-					<span id="spTeamName" style="font-weight:bold; padding-left:10px">${Name}</span>
-                    <br/>
-                    <br/>
-					<span id="spPosition" style="padding-left:14px" >Posicion: ${ActualPosition}°</span>                    
-                    <span id="spPoints" style="padding-left:14px">Puntos: ${ActualPoints}</span>
-				</div>
+				<div style="color:${TextColor}; margin-bottom:5px; ">
+					<span id="spTeamName" style="font-weight:bold;">${Name}</span>                    					
+				</div>                
+                <div style="color:${TextColor}; font-size:small">
+                    <span id="spPosition" style="padding-left:5px; padding-right:5px; background-color:${AltColor}; opacity: 0.7; -moz-border-radius: 3px; border-radius: 3px;" >Posición: ${ActualPosition}°</span>
+                    <br \>
+                    <span id="spPoints" style="padding-left:5px; padding-right:5px; background-color:${AltColor}; opacity: 0.7; -moz-border-radius: 3px; border-radius: 3px;">Puntos: ${ActualPoints}</span>
+                    <br \>
+                    <span id="spGoals" style="padding-left:5px; padding-right:5px; background-color:${AltColor}; opacity: 0.7; -moz-border-radius: 3px; border-radius: 3px;">Goles: ${Goals_Total}</span>
+                </div>
 			<div>      
         </section>        
     </div>
@@ -28,13 +31,16 @@
 				<div style="float:left;">
 					<img src="/Content/Images/${FileImgName}" />
 				</div>
-				<div style="color:${TextColor}">
-					<span id="spTeamName" style="font-weight:bold; padding-left:10px">${Name}</span>
-                    <br/>
-                    <br/>
-					<span id="spPosition" style="padding-left:14px" >Posicion: ${ActualPosition}°</span>                    
-                    <span id="spPoints" style="padding-left:14px">Puntos: ${ActualPoints}</span>
-				</div>
+				<div style="color:${TextColor}; margin-bottom:5px; ">
+					<span id="spTeamName" style="font-weight:bold; padding-left:10px">${Name}</span>                    					
+				</div>                
+                <div style="color:${TextColor}; font-size:small">
+                    <span id="spPosition" style="padding-left:16px" >Posicion: ${ActualPosition}°</span>
+                    <br \>
+                    <span id="spPoints" style="padding-left:16px">Puntos: ${ActualPoints}</span>
+                    <br \>
+                    <span id="spGoals" style="padding-left:16px">Puntos: ${Goals_Total}</span>
+                </div>
 			<div>      
         </section>        
     </div>
@@ -43,15 +49,20 @@
 <script id="TeamTemplate_Large" type="text/x-jquery-tmpl">
      <div class="content">
         <header>            
-			<div style="color:${TextColor}">
-				<span id="spTeamName" style="font-weight:bold; padding-left:10px">${Name}</span>
-                <br/>                
-				<span id="spPosition" style="padding-left:10px; font-size:small" >Posicion: ${ActualPosition}°</span>                    
-                <span id="spPoints" style="padding-left:10px; font-size:small">Puntos: ${ActualPoints}</span>
-			</div>			
+			<div style="color:${TextColor}; margin-bottom:5px; ">
+				<span id="spTeamName" style="font-weight:bold; padding-left:10px">${Name}</span>                    					
+			</div>
+            <br \>
+            
         </header>
 
         <section>            
+            <div style="color:${TextColor}; font-size:smaller; margin-bottom:5px">
+                <span id="spPosition" style="padding-left:5px; padding-right:5px; background-color:${AltColor}; opacity: 0.7; -moz-border-radius: 3px; border-radius: 3px;" >Posición: ${ActualPosition}°</span>                
+                <span id="spPoints" style="padding-left:5px; padding-right:5px; background-color:${AltColor}; opacity: 0.7; -moz-border-radius: 3px; border-radius: 3px;">Puntos: ${ActualPoints}</span>                
+                <span id="spGoals" style="padding-left:5px; padding-right:5px; background-color:${AltColor}; opacity: 0.7; -moz-border-radius: 3px; border-radius: 3px;">Goles: ${Goals_Total}</span>
+            </div>
+                        
             <div id="progressPositionCanvas${GraphName}" class="canvas"></div>
         </section>        
 
