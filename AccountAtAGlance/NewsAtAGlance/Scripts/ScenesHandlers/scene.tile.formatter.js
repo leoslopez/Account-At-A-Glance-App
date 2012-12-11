@@ -54,7 +54,7 @@ var tileFormatter = new function () {
                     values.push(tileDiv.data().tileData.Goals_Forw);
                     labels.push(tileDiv.data().tileData.Goals_Forw + ' goles \r\n Del.');
 
-                    raphael(namePieDiv, 50, 50).pieChart(130, tileDiv.data().scenes[0].height / 4, 50, values, labels, "#fff");
+                    raphael(namePieDiv, 300, 400).pieChart(130, tileDiv.data().scenes[0].top + 80, 50, values, labels, "#fff");
                 }
             }
         }
