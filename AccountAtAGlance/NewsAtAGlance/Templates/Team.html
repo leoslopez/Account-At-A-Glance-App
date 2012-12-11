@@ -10,12 +10,12 @@
 				<div style="color:${TextColor}; margin-bottom:5px; ">
 					<span id="spTeamName" style="font-weight:bold;">${Name}</span>                    					
 				</div>                
-                <div style="color:${TextColor}; font-size:small">
-                    <span id="spPosition" style="padding-left:5px; padding-right:5px; background-color:${AltColor}; opacity: 0.7; -moz-border-radius: 3px; border-radius: 3px;" >Posición: ${ActualPosition}°</span>
+                <div style="font-weight:bold; color:${TextColor}; font-size:small; position: absolute; border: ${AltColor} solid 1px; color: ${TextColor}; left: 115px; -moz-border-radius: 3px; border-radius: 3px; padding:5px">
+                    <span id="spPosition" style="" >Posición: ${ActualPosition}°</span>
                     <br \>
-                    <span id="spPoints" style="padding-left:5px; padding-right:5px; background-color:${AltColor}; opacity: 0.7; -moz-border-radius: 3px; border-radius: 3px;">Puntos: ${ActualPoints}</span>
+                    <span id="spPoints" style="">Puntos: ${ActualPoints}</span>
                     <br \>
-                    <span id="spGoals" style="padding-left:5px; padding-right:5px; background-color:${AltColor}; opacity: 0.7; -moz-border-radius: 3px; border-radius: 3px;">Goles: ${Goals_Total}</span>
+                    <span id="spGoals" style="">Goles: ${Goals_Total}</span>
                 </div>
 			<div>      
         </section>        
@@ -58,9 +58,9 @@
 
         <section>            
             <div style="color:${TextColor}; font-size:smaller; margin-bottom:5px">
-                <span id="spPosition" style="padding-left:5px; padding-right:5px; background-color:${AltColor}; opacity: 0.7; -moz-border-radius: 3px; border-radius: 3px;" >Posición: ${ActualPosition}°</span>                
-                <span id="spPoints" style="padding-left:5px; padding-right:5px; background-color:${AltColor}; opacity: 0.7; -moz-border-radius: 3px; border-radius: 3px;">Puntos: ${ActualPoints}</span>                
-                <span id="spGoals" style="padding-left:5px; padding-right:5px; background-color:${AltColor}; opacity: 0.7; -moz-border-radius: 3px; border-radius: 3px;">Goles: ${Goals_Total}</span>
+                <span id="spPosition" style="font-weight:bold; border: ${AltColor} solid 1px; padding-left:5px; padding-right:5px; -moz-border-radius: 3px; border-radius: 3px;" >Posición: ${ActualPosition}°</span>                
+                <span id="spPoints" style="font-weight:bold; border: ${AltColor} solid 1px; padding-left:5px; padding-right:5px; -moz-border-radius: 3px; border-radius: 3px;">Puntos: ${ActualPoints}</span>                
+                <span id="spGoals" style="font-weight:bold; border: ${AltColor} solid 1px; padding-left:5px; padding-right:5px; -moz-border-radius: 3px; border-radius: 3px;">Goles: ${Goals_Total}</span>
             </div>
                         
             <div id="progressPositionCanvas${GraphName}" class="canvas"></div>
