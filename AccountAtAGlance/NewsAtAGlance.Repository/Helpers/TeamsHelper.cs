@@ -49,10 +49,10 @@ namespace NewsAtAGlance.Repository.Helpers
             SocccerTeam river = new SocccerTeam()
             {
                 Name = "River Plate",                
-                Goals_GK = 0,
+                Goals_GK = 2,
                 Goals_Def = 2,
                 Goals_Mid = 6,
-                Goals_Forw = 10,
+                Goals_Forw = 15,
                 // Contain progress related to the last 5 matches
                 PointsProgress = GetDataPointList(COUNT_POINTS, new int[COUNT_POINTS] { 1, 4, 7, 7, 10, 13, 14 }),
                 PositionProgress = GetDataPointList(COUNT_POINTS, new int[COUNT_POINTS] { 8, 4, 3, 6, 5, 3, 4 }),
@@ -65,7 +65,7 @@ namespace NewsAtAGlance.Repository.Helpers
             SocccerTeam boca = new SocccerTeam()
             {
                 Name = "Boca Jrs",
-                Goals_GK = 1,
+                Goals_GK = 0,
                 Goals_Def = 4,
                 Goals_Mid = 2,
                 Goals_Forw = 12,

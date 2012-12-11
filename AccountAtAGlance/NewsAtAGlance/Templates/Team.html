@@ -11,11 +11,11 @@
 					<span id="spTeamName" style="font-weight:bold;">${Name}</span>                    					
 				</div>                
                 <div style="font-weight:bold; color:${TextColor}; font-size:small; position: absolute; border: ${AltColor} solid 1px; color: ${TextColor}; left: 115px; -moz-border-radius: 3px; border-radius: 3px; padding:5px">
-                    <span id="spPosition" style="" >Posición: ${ActualPosition}°</span>
+                    <span id="spPosition">Posición: ${ActualPosition}°</span>
                     <br \>
-                    <span id="spPoints" style="">Puntos: ${ActualPoints}</span>
+                    <span id="spPoints">Puntos: ${ActualPoints}</span>
                     <br \>
-                    <span id="spGoals" style="">Goles: ${Goals_Total}</span>
+                    <span id="spGoals">Goles: ${Goals_Total}</span>
                 </div>
 			<div>      
         </section>        
@@ -25,21 +25,25 @@
 <script id="TeamTemplate_Medium" type="text/x-jquery-tmpl">
     <div class="content">
         <header>
+            <div style="color:${TextColor}; margin-bottom:5px; padding-left:20px">
+				<span id="spTeamName" style="font-weight:bold;">${Name}</span>                    					
+			</div>
         </header>
         <section>
             <div>
-				<div style="float:left;">
+				<div style="float:left; margin-right:20px; padding-left: 6px; padding-top:5px">
 					<img src="/Content/Images/${FileImgName}" />
-				</div>
-				<div style="color:${TextColor}; margin-bottom:5px; ">
-					<span id="spTeamName" style="font-weight:bold; padding-left:10px">${Name}</span>                    					
-				</div>                
-                <div style="color:${TextColor}; font-size:small">
-                    <span id="spPosition" style="padding-left:16px" >Posicion: ${ActualPosition}°</span>
+				</div>				
+                <div style="font-weight:bold; color:${TextColor}; font-size:small; position: absolute; border: ${AltColor} solid 1px; color: ${TextColor}; top: 132px; left: 15px; -moz-border-radius: 3px; border-radius: 3px; padding:5px">
+                    <span id="spPosition">Posición: ${ActualPosition}°</span>
                     <br \>
-                    <span id="spPoints" style="padding-left:16px">Puntos: ${ActualPoints}</span>
+                    <span id="spPoints">Puntos: ${ActualPoints}</span>
                     <br \>
-                    <span id="spGoals" style="padding-left:16px">Puntos: ${Goals_Total}</span>
+                    <span id="spGoals">Goles: ${Goals_Total}</span>
+                </div>
+
+                 <div id="svgContainer${GraphName}" style="margin-top:0px;">
+                    <div id="goalsPieSVG${GraphName}" class="unaClase" style="width: 120px; height: 195px; top: 46px; position: absolute; left: 50px;" />
                 </div>
 			<div>      
         </section>        

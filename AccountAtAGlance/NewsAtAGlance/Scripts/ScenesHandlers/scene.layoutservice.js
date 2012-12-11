@@ -10,16 +10,16 @@ var sceneLayoutService = function () {
         var pad = 6,
         row1H = 210,
         //small
-        s1Sh = 93,
-        s1Sh2 = 93,
+        s1Sh = 101,
+        s1Sh2 = 101,
         s1Sw = 264,
         //medium
-        s1Mh = 197,
+        s1Mh = 213,
         s1Mw = 290,
-        s1Mw2 = 230,
+        s1Mw2 = 270,
         s1Mw3 = 270
         //large
-        s1Lh = 340,
+        s1Lh = 325,
         s1Lw = 484,
 
         // TODO: reuse tiles related to News. All of them have a same format.
