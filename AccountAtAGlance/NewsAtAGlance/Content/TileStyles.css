@@ -31,3 +31,5 @@
 .videoHeaderSmall { background-color:Gold; margin-bottom:10px; color:Black !important }
 .videoHeaderMedium { background-color:Gold; margin-bottom:10px; color:Black !important }
 .videoHeaderLarge { background-color:Gold; margin-bottom:10px; color:Black !important }
+
+.goalsPieDiv { width: 120px; height: 195px; top: 34px; position: absolute; left: 50px; }

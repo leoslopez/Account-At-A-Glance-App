@@ -5,8 +5,7 @@ var tileFormatter = new function () {
     var previousPoint = null,
 
     tmplSizes = ['Small', 'Medium', 'Large'],
-    raphael = Raphael.ninja(),
-    //raphael = Raphael(10, 50, 640, 480);
+    raphael = Raphael.ninja(),    
 
     formatNews = function (tileDiv) {
     },
@@ -36,7 +35,7 @@ var tileFormatter = new function () {
                 // remove goalsPieSVG from svgContainerDiv
                 $('div').remove('#' + namePieDiv);
                 // append goalsPieSVG again       
-                svgContainerDiv.append('<div id="' + namePieDiv + '" style="width: 120px; height: 195px; top: 46px; position: absolute; left: 50px;" />');
+                svgContainerDiv.append('<div id="' + namePieDiv + '" class="goalsPieDiv" />');
 
                 if ($('#' + namePieDiv).length > 0) {
                     var values = [];
@@ -176,7 +175,8 @@ var tileFormatter = new function () {
         //Make sure that clicks and mouse events on the video don't propogate up to move the tile or do something else
         player.bind('click mousedown mouseup mousemove mouseenter mouseleave', function (e) {
             e.stopPropagation();
-        });        
+        });
+                
     };
 
     return {

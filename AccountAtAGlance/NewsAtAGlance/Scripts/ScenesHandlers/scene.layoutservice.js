@@ -21,6 +21,7 @@ var sceneLayoutService = function () {
         //large
         s1Lh = 325,
         s1Lw = 484,
+        s2Lw = 614,
 
         // TODO: reuse tiles related to News. All of them have a same format.
         items = { tiles:
@@ -110,7 +111,7 @@ var sceneLayoutService = function () {
                             tileId: 'Video',
                             formatter: tileFormatter.formatVideo,
                             scenes: [
-                                { height: s1Lh, width: s1Lw, top: s1Mh + pad * 2, left: s1Lw + pad, opacity: 1, size: 2, borderColor: 'deeppink', z: 0 },
+                                { height: s1Lh, width: s2Lw, top: s1Mh + pad * 2, left: s1Lw + pad, opacity: 1, size: 2, borderColor: 'deeppink', z: 0 },
                                 { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: 'orange', opacity: .65, z: '2000' }
                             ]
                         }
