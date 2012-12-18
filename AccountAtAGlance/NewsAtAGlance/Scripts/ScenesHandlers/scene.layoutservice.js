@@ -29,8 +29,8 @@ var sceneLayoutService = function () {
                             tileId: 'Team1',
                             formatter: tileFormatter.formatTeams,
                             scenes: [
-                                { height: s1Sh, width: s1Sw, top: 0, left: 0, opacity: 1, size: 0, borderColor: 'red', z: 0 },                            
-                                {height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: 'red', opacity: .65, z: '2000' }
+                                { height: s1Sh, width: s1Sw, top: 0, left: 0, opacity: 1, size: 0, borderColor: 'red', z: 0 },
+                                { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: 'red', opacity: .65, z: '2000' }
                             ]
                         },
 
@@ -45,7 +45,7 @@ var sceneLayoutService = function () {
 
                         { name: 'News 1',
                             tileId: 'News1',
-                            formatter: tileFormatter.formatNews,                            
+                            formatter: tileFormatter.formatNews,
                             scenes: [
                                 { height: s1Mh, width: s1Mw, top: 0, left: s1Sw + pad, opacity: 1, size: 1, borderColor: 'orange', z: 0 },
                                 { height: 90, width: 210, top: 80, left: 250, size: 0, borderColor: 'orange', z: '2000', opacity: .5 }
@@ -66,7 +66,7 @@ var sceneLayoutService = function () {
                             formatter: tileFormatter.formatNews,
                             scenes: [
                                 { height: s1Sh, width: s1Sw, top: 0, left: s1Sw + s1Mw + s1Mw2 + (pad * 3), opacity: 1, size: 0, borderColor: 'orange', z: 0 },
-                                { height: 90, width: 200, top: 60, left: 870, size: 0, borderColor: 'orange', opacity: .7 }    
+                                { height: 90, width: 200, top: 60, left: 870, size: 0, borderColor: 'orange', opacity: .7 }
                             ]
                         },
 
@@ -84,7 +84,7 @@ var sceneLayoutService = function () {
                             formatter: tileFormatter.formatNews,
                             scenes: [
                                 { height: s1Mh, width: s1Mw3, top: 0, left: s1Sw + s1Mw + s1Mw2 + s1Sw + (pad * 4), opacity: 1, size: 1, borderColor: 'orange', z: 0 },
-                                { height: 90, width: 110, top: 380, left: 150, size: 0, borderColor: 'orange', z: '2000', opacity: .5 }                                
+                                { height: 90, width: 110, top: 380, left: 150, size: 0, borderColor: 'orange', z: '2000', opacity: .5 }
                             ]
                         },
 
@@ -95,7 +95,7 @@ var sceneLayoutService = function () {
                                 { height: s1Mh, width: s1Mw, top: 0, left: s1Sw + s1Mw + s1Mw2 + s1Mw3 + s1Sw + (pad * 5), opacity: 1, size: 1, borderColor: 'orange', z: 0 },
                                 { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: 'orange', opacity: .65, z: '2000' }
                             ]
-                        },                        
+                        },
 
                         { name: 'News 7',
                             tileId: 'News7',
@@ -104,10 +104,19 @@ var sceneLayoutService = function () {
                                 { height: s1Lh, width: s1Lw, top: s1Mh + pad * 2, left: 0, opacity: 1, size: 2, borderColor: 'orange', z: 0 },
                                 { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: 'orange', opacity: .65, z: '2000' }
                             ]
+                        },
+
+                        { name: 'Video',
+                            tileId: 'Video',
+                            formatter: tileFormatter.formatVideo,
+                            scenes: [
+                                { height: s1Lh, width: s1Lw, top: s1Mh + pad * 2, left: s1Lw + pad, opacity: 1, size: 2, borderColor: 'deeppink', z: 0 },
+                                { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: 'orange', opacity: .65, z: '2000' }
+                            ]
                         }
                     ]
         };
-        
+
         return items;
     };
 

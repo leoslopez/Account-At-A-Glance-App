@@ -27,3 +27,7 @@
 .newsHeaderSmall { background-color: #7752ED; }
 .newsHeaderMedium { background-color: #BA1363; }
 .newsHeaderLarge { background-color:#37D753; }
+
+.videoHeaderSmall { background-color:Gold; margin-bottom:10px; color:Black !important }
+.videoHeaderMedium { background-color:Gold; margin-bottom:10px; color:Black !important }
+.videoHeaderLarge { background-color:Gold; margin-bottom:10px; color:Black !important }

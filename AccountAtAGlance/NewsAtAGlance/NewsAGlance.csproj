@@ -91,6 +91,7 @@
     <Content Include="Content\Images\left_arrow.png" />
     <Content Include="Content\Images\makingSenseLogo.png" />
     <Content Include="Content\Images\right_arrow.png" />
+    <Content Include="Content\Images\video-poster.jpg" />
     <Content Include="Content\NewsStyles.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -188,6 +189,7 @@
     <Content Include="Scripts\ScenesHandlers\scene.tile.binder.js" />
     <Content Include="Scripts\ScenesHandlers\scene.tile.formatter.js" />
     <Content Include="Scripts\ScenesHandlers\scene.tile.renderer.js" />
+    <Content Include="Templates\Video.html" />
     <Content Include="Templates\Team.html" />
     <Content Include="Templates\News.html" />
     <Content Include="Unity.Mvc3.README.txt" />

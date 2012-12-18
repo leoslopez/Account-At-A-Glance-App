@@ -55,9 +55,7 @@ var sceneStateManager = function () {
 
         dataService.getNews(locId, langId, sectId, renderNewsTiles);
         dataService.getTeams(renderTeamsTiles);
-
-        //TODO: add renderize to default tiles
-        //renderDefaultTiles();
+        renderDefaultTiles();
     },
 
 
@@ -89,14 +87,14 @@ var sceneStateManager = function () {
         }
     },
 
-    //    renderDefaultTiles = function() {
-    //        $('#Video').each(function() {
-    //            if ($(this).data().templates == null) {
-    //                var tileDiv = $(this);
-    //                tileBinder.bind(tileDiv, null, tileRenderer.render);
-    //            }
-    //        });
-    //    }    
+    renderDefaultTiles = function () {
+        $('#Video').each(function () {
+            if ($(this).data().templates == null) {
+                var tileDiv = $(this);
+                tileBinder.bind(tileDiv, null, tileRenderer.render);
+            }
+        });
+    };
 
 
     /////// Region Swap ///////

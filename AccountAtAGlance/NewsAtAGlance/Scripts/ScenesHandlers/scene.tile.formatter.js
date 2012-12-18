@@ -159,9 +159,30 @@ var tileFormatter = new function () {
         return [xMin, xMax, yMin, yMax];
     };
 
+    formatVideo = function (tileDiv) {
+
+        // verify the video feature availability
+        if (!Modernizr.video) return;
+        
+        var scene = tileDiv.data().scenes[0];
+        var player = $('#VideoPlayer');
+        var videoRatio = 2.43;
+        var videoHeight = Math.round(scene.height * .75);
+        var videoWidth = Math.round(videoHeight * videoRatio);
+        if (videoWidth > scene.width) videoWidth = scene.width - 20;
+
+        player.css({ height: videoHeight + 'px', width: videoWidth + 'px' });
+
+        //Make sure that clicks and mouse events on the video don't propogate up to move the tile or do something else
+        player.bind('click mousedown mouseup mousemove mouseenter mouseleave', function (e) {
+            e.stopPropagation();
+        });        
+    };
+
     return {
         formatNews: formatNews,
-        formatTeams: formatTeams
+        formatTeams: formatTeams,
+        formatVideo: formatVideo
     };
 
 } ();
