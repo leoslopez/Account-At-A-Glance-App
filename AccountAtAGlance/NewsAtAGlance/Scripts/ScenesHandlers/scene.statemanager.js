@@ -9,11 +9,13 @@ var sceneStateManager = function () {
     init = function (args) {
 
         tiles = args.tiles;
+        $('.tile').remove();
 
         $(tiles).each(function (index) {
 
             //build tiles
             var tileDiv = $('<div/>', { 'class': 'tile', 'text': this.name, 'id': this.tileId });
+
             tileDiv.css('border-top', '5px solid ' + this.scenes[sceneId].borderColor);
             tileDiv.data(this);
 

@@ -92,6 +92,7 @@
     <Content Include="Content\Images\makingSenseLogo.png" />
     <Content Include="Content\Images\right_arrow.png" />
     <Content Include="Content\Images\video-poster.jpg" />
+    <Content Include="Content\jquery.dropdown.css" />
     <Content Include="Content\NewsStyles.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -171,6 +172,7 @@
     <Content Include="Scripts\Libs\jquery-1.7.2.min.js" />
     <Content Include="Scripts\Libs\jquery-ui-1.8.22.js" />
     <Content Include="Scripts\Libs\jquery-ui-1.8.22.min.js" />
+    <Content Include="Scripts\Libs\jquery.dropdown.js" />
     <Content Include="Scripts\Libs\jquery.easing.1.3.js" />
     <Content Include="Scripts\Libs\jquery.flot.js" />
     <Content Include="Scripts\Libs\jquery.Scroller-1.0.min.js" />
@@ -254,7 +256,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>56416</DevelopmentServerPort>
+          <DevelopmentServerPort>9553</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
