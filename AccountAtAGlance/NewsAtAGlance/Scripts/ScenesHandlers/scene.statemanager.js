@@ -40,14 +40,22 @@ var sceneStateManager = function () {
     },
 
     slideLeft = function () {
-        $('.top-row').animate({ 'left': '-=200px' }, 800, function () {
-            $(this).data().scenes[sceneId].left -= 200;
+
+        // TODO: it should be done more flexible. Calculate with and slide after.
+        // it allows to slide to left only 3 times (3 * -170px = -510px)
+        if ($('.top-row').css('left') == '-510px') return;
+
+        $('.top-row').animate({ 'left': '-=170px' }, 800, function () {
+            $(this).data().scenes[sceneId].left -= 170;
         });
     },
 
     slideRight = function () {
-        $('.top-row').animate({ 'left': '+=200px' }, 800, function () {
-            $(this).data().scenes[sceneId].left += 200;
+        // it allows to slide to rigth if the top-row does not arrived to limit
+        if ($('.top-row').css('left') == '0px') return;
+
+        $('.top-row').animate({ 'left': '+=170px' }, 800, function () {
+            $(this).data().scenes[sceneId].left += 170;
         });
     },
 
@@ -178,10 +186,34 @@ var sceneStateManager = function () {
 
     /////// EndRegion Swap ///////
 
+    changeScene = function () {
+        if (sceneId == 0) {
+            sceneId = 1;
+            //$('.scroller').hide();
+            $('.scroller').css('visibility', 'hidden');
+            $('#gridButton').delay(Math.floor(Math.random() * 450)).attr('disabled', false).addClass('enabled');
+            $('#cloudButton').delay(Math.floor(Math.random() * 450)).attr('disabled', true).removeClass('enabled');
+
+        } else if (sceneId == 1) {
+            sceneId = 0;
+            //$('.scroller').show();
+            $('.scroller').css('visibility', 'visible');
+            $('#cloudButton').attr('disabled', false).addClass('enabled');
+            $('#gridButton').attr('disabled', true).removeClass('enabled');
+        }
+
+        $('.tile').each(function () {
+            var tile = $(this);
+            moveTile(tile, tile.data().scenes[sceneId]);
+            tileRenderer.render(tile, sceneId);
+        });
+    };
+
     return {
         init: init,
         getTiles: function () { return tiles; },
-        renderTiles: renderTiles
+        renderTiles: renderTiles,
+        changeScene: changeScene
     };
 
 } ();

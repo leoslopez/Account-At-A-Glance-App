@@ -82,6 +82,10 @@ textarea
     display: none;
 }
 
+#main { height: 100%; width: 100%; display: block; position:absolute; background: #0FA86F; background-size: 100% 100%, auto;}
+#main, body{ -o-background-size: 100% 100%, auto;}
+#main, body{ -moz-background-size: 100% 100%, auto;}
+#main, body{ -webkit-background-size: 100% 100%, auto;}
 
 #container {width: 1260px; margin: auto; border: 0px solid #fff; }
 #container #header { padding-bottom: 0px; height:68px; width: 1174px; margin: auto; position:relative;  font-family : "TradeGothicLTStd-Bold"; font-size: 30px;}
@@ -92,6 +96,8 @@ textarea
 
 .scroller { height: 105px; margin: 75px 0px 0px; width: 40px; }/*display:none; }*/
 .scroller:hover {cursor: pointer}
+
+#cloudButton, #gridButton{opacity: 1;}
 
 #newslogo { clear: none; position: relative; left: 3px; top: 4px; }
 #newsTopRight { display: block; clear: none; position:absolute; right: 3px; top: 3px; }
@@ -105,7 +111,7 @@ textarea
 {
     position: absolute; 
     top:14px; 
-    left:1080px;
+    left:980px;
 }
 
 .myDropDown 

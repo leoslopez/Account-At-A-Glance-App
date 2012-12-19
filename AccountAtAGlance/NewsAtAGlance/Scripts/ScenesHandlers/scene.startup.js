@@ -18,15 +18,14 @@ var startup = function () {
         });
 
         var defaultPositions = sceneLayoutService.get();
+        
+        $('#gridButton').click(function () {
+            sceneStateManager.changeScene();
+        });
 
-        // TODO: add change scene functionality
-        //        $('#gridButton').click(function () {
-        //            sceneStateManager.changeScene();
-        //        });
-
-        //        $('#cloudButton').click(function () {
-        //            sceneStateManager.changeScene();
-        //        });
+        $('#cloudButton').click(function () {
+            sceneStateManager.changeScene();
+        });
 
         sceneStateManager.init(defaultPositions);
         // TODO: verify parameters
