@@ -26,30 +26,12 @@ var sceneLayoutService = function () {
         // TODO: reuse tiles related to News. All of them have a same format.
         items = { tiles:
                     [
-                        { name: 'Team 1',
-                            tileId: 'Team1',
-                            formatter: tileFormatter.formatTeams,
-                            scenes: [
-                                { height: s1Sh, width: s1Sw, top: 0, left: 0, opacity: 1, size: 0, borderColor: 'red', z: 0 },
-                                { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: 'red', opacity: .65, z: '2000' }
-                            ]
-                        },
-
-                        { name: 'Team 2',
-                            tileId: 'Team2',
-                            formatter: tileFormatter.formatTeams,
-                            scenes: [
-                                { height: s1Sh, width: s1Sw, top: s1Sh + (pad * 1.8), left: 0, opacity: 1, size: 0, borderColor: 'yellow', z: 0 },
-                                { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: 'yellow', opacity: .65, z: '2000' }
-                            ]
-                        },
-
                         { name: 'News 1',
                             tileId: 'News1',
                             formatter: tileFormatter.formatNews,
                             scenes: [
-                                { height: s1Mh, width: s1Mw, top: 0, left: s1Sw + pad, opacity: 1, size: 1, borderColor: 'orange', z: 0 },
-                                { height: 90, width: 210, top: 80, left: 250, size: 0, borderColor: 'orange', z: '2000', opacity: .5 }
+                                { height: s1Sh, width: s1Sw, top: 0, left: 0, opacity: 1, size: 0, borderColor: 'orange', z: 0 },
+                                { height: s1Sh2, width: s1Sw, top: 170, left: 10, size: 0, borderColor: 'orange', opacity: .15, z: '2000' }
                             ]
                         },
 
@@ -57,8 +39,8 @@ var sceneLayoutService = function () {
                             tileId: 'News2',
                             formatter: tileFormatter.formatNews,
                             scenes: [
-                                { height: s1Mh, width: s1Mw2, top: 0, left: s1Sw + s1Mw + (pad * 2), opacity: 1, size: 1, borderColor: 'orange', z: 0 },
-                                { height: 90, width: 210, top: 180, left: 150, size: 0, borderColor: 'orange', z: '2000', opacity: .5 }
+                                { height: s1Sh, width: s1Sw, top: s1Sh + (pad * 1.8), left: 0, opacity: 1, size: 0, borderColor: 'orange', z: 0 },
+                                { height: s1Sh2, width: s1Sw, top: 300, left: 0, size: 0, borderColor: 'orange', opacity: .75, z: '2000' }
                             ]
                         },
 
@@ -66,8 +48,17 @@ var sceneLayoutService = function () {
                             tileId: 'News3',
                             formatter: tileFormatter.formatNews,
                             scenes: [
-                                { height: s1Sh, width: s1Sw, top: 0, left: s1Sw + s1Mw + s1Mw2 + (pad * 3), opacity: 1, size: 0, borderColor: 'orange', z: 0 },
-                                { height: 90, width: 200, top: 60, left: 870, size: 0, borderColor: 'orange', opacity: .7 }
+                                { height: s1Mh, width: s1Mw, top: 0, left: s1Sw + pad, opacity: 1, size: 1, borderColor: 'orange', z: 0 },
+                                { height: s1Sh2, width: s1Sw, top: 20, left: 300, size: 0, borderColor: 'orange', z: '4000', opacity: .8 }
+                            ]
+                        },
+
+                        { name: 'Team 2',
+                            tileId: 'Team2',
+                            formatter: tileFormatter.formatTeams,
+                            scenes: [
+                                { height: s1Mh, width: s1Mw2, top: 0, left: s1Sw + s1Mw + (pad * 2), opacity: 1, size: 1, borderColor: 'yellow', z: 0 },
+                                { height: s1Mh, width: s1Mw2, top: 20, left: 600, size: 1, borderColor: 'yellow', z: '2000', opacity: 1 }
                             ]
                         },
 
@@ -75,8 +66,8 @@ var sceneLayoutService = function () {
                             tileId: 'News4',
                             formatter: tileFormatter.formatNews,
                             scenes: [
-                                { height: s1Sh2, width: s1Sw, top: s1Sh + (pad * 1.8), left: s1Sw + s1Mw + s1Mw2 + (pad * 3), opacity: 1, size: 0, borderColor: 'orange', z: 0 },
-                                { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: 'orange', opacity: .65, z: '2000' }
+                                { height: s1Sh, width: s1Sw, top: 0, left: s1Sw + s1Mw + s1Mw2 + (pad * 3), opacity: 1, size: 0, borderColor: 'orange', z: 0 },
+                                { height: s1Sh, width: s1Sw, top: 450, left: 870, size: 0, borderColor: 'orange', opacity: 1, z: '3000' }
                             ]
                         },
 
@@ -84,8 +75,8 @@ var sceneLayoutService = function () {
                             tileId: 'News5',
                             formatter: tileFormatter.formatNews,
                             scenes: [
-                                { height: s1Mh, width: s1Mw3, top: 0, left: s1Sw + s1Mw + s1Mw2 + s1Sw + (pad * 4), opacity: 1, size: 1, borderColor: 'orange', z: 0 },
-                                { height: 90, width: 110, top: 380, left: 150, size: 0, borderColor: 'orange', z: '2000', opacity: .5 }
+                                { height: s1Sh2, width: s1Sw, top: s1Sh + (pad * 1.8), left: s1Sw + s1Mw + s1Mw2 + (pad * 3), opacity: 1, size: 0, borderColor: 'orange', z: 0 },
+                                { height: s1Sh, width: s1Sw, top: 415, left: 30, size: 0, borderColor: 'orange', opacity: 1, z: '2000' }
                             ]
                         },
 
@@ -93,8 +84,8 @@ var sceneLayoutService = function () {
                             tileId: 'News6',
                             formatter: tileFormatter.formatNews,
                             scenes: [
-                                { height: s1Mh, width: s1Mw, top: 0, left: s1Sw + s1Mw + s1Mw2 + s1Mw3 + s1Sw + (pad * 5), opacity: 1, size: 1, borderColor: 'orange', z: 0 },
-                                { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: 'orange', opacity: .65, z: '2000' }
+                                { height: s1Mh, width: s1Mw3, top: 0, left: s1Sw + s1Mw + s1Mw2 + s1Sw + (pad * 4), opacity: 1, size: 1, borderColor: 'orange', z: 0 },
+                                { height: s1Sh, width: s1Sw, top: 0, left: 850, size: 0, borderColor: 'orange', z: '2000', opacity: .5 }
                             ]
                         },
 
@@ -102,8 +93,17 @@ var sceneLayoutService = function () {
                             tileId: 'News7',
                             formatter: tileFormatter.formatNews,
                             scenes: [
-                                { height: s1Lh, width: s1Lw, top: s1Mh + pad * 2, left: 0, opacity: 1, size: 2, borderColor: 'orange', z: 0 },
-                                { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: 'orange', opacity: .65, z: '2000' }
+                                { height: s1Mh, width: s1Mw, top: 0, left: s1Sw + s1Mw + s1Mw2 + s1Mw3 + s1Sw + (pad * 5), opacity: 1, size: 1, borderColor: 'orange', z: 0 },
+                                { height: s1Mh, width: s1Mw2, top: 140, left: 250, size: 1, borderColor: 'orange', opacity: 1, z: '2000' }
+                            ]
+                        },
+
+                        { name: 'Team 1',
+                            tileId: 'Team1',
+                            formatter: tileFormatter.formatTeams,
+                            scenes: [
+                                { height: s1Lh, width: s1Lw, top: s1Mh + pad * 2, left: 0, opacity: 1, size: 2, borderColor: 'red', z: 0 },
+                                { height: s1Sh, width: s1Sw, top: 30, left: 20, size: 0, borderColor: 'red', opacity: .95, z: '4000' }
                             ]
                         },
 
@@ -112,7 +112,7 @@ var sceneLayoutService = function () {
                             formatter: tileFormatter.formatVideo,
                             scenes: [
                                 { height: s1Lh, width: s2Lw, top: s1Mh + pad * 2, left: s1Lw + pad, opacity: 1, size: 2, borderColor: 'deeppink', z: 0 },
-                                { height: 105, width: 250, top: 200, left: 0, size: 0, borderColor: 'orange', opacity: .65, z: '2000' }
+                                { height: s1Lh, width: s1Lw, top: 200, left: 450, size: 2, borderColor: 'deeppink', opacity: 1, z: '10000' }
                             ]
                         }
                     ]

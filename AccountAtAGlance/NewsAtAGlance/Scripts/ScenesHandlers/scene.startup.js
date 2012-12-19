@@ -1,30 +1,18 @@
 ﻿//Contains the initial screen startup routines
 
-var startup = function () {
-
-    var windowFocused = true,
+var startup = function () {    
 
     // TODO: verify parameters
-    init = function (locId, langId, sectId) {
-
-        //track if user switches tabs or not otherwise
-        //timers may queue up in some browsers like Chrome
-        $(window).focus(function () {
-            windowFocused = true;
-        });
-
-        $(window).blur(function () {
-            windowFocused = false;
-        });
+    init = function (locId, langId, sectId) {        
 
         var defaultPositions = sceneLayoutService.get();
         
         $('#gridButton').click(function () {
-            sceneStateManager.changeScene();
+            sceneStateManager.changeScene(0);
         });
 
         $('#cloudButton').click(function () {
-            sceneStateManager.changeScene();
+            sceneStateManager.changeScene(1);
         });
 
         sceneStateManager.init(defaultPositions);

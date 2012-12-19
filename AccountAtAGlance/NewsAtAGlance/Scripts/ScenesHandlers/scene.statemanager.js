@@ -156,8 +156,8 @@ var sceneStateManager = function () {
             target.data().scenes[sceneId].size = sourceSize;
             source.data().scenes[sceneId].size = targetSize;
 
-            tileRenderer.render(target);
-            tileRenderer.render(source);
+            tileRenderer.render(target, sceneId);
+            tileRenderer.render(source, sceneId);
         }
     },
 
@@ -186,15 +186,15 @@ var sceneStateManager = function () {
 
     /////// EndRegion Swap ///////
 
-    changeScene = function () {
-        if (sceneId == 0) {
+    changeScene = function (scene) {
+        if (scene == 1) {
             sceneId = 1;
             //$('.scroller').hide();
             $('.scroller').css('visibility', 'hidden');
             $('#gridButton').delay(Math.floor(Math.random() * 450)).attr('disabled', false).addClass('enabled');
             $('#cloudButton').delay(Math.floor(Math.random() * 450)).attr('disabled', true).removeClass('enabled');
 
-        } else if (sceneId == 1) {
+        } else if (scene == 0) {
             sceneId = 0;
             //$('.scroller').show();
             $('.scroller').css('visibility', 'visible');
