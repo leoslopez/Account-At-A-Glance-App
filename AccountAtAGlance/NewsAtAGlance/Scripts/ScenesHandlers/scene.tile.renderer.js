@@ -15,7 +15,7 @@ var tileRenderer = function () {
         tileDiv.html(template);
 
         if (formatterFunc != null) {
-            formatterFunc(tileDiv);
+            formatterFunc(tileDiv, sceneId);
         }
     };
 

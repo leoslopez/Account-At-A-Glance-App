@@ -10,8 +10,8 @@ var tileFormatter = new function () {
     formatNews = function (tileDiv) {
     },
 
-    formatTeams = function (tileDiv) {
-        var size = tileDiv.data().scenes[0].size;
+    formatTeams = function (tileDiv, sceneId) {
+        var size = tileDiv.data().scenes[sceneId].size;
         if (size == 2 && Modernizr.canvas) {
             var canvasDiv = $('#progressPositionCanvas' + tileDiv.data().tileData.GraphName);
 
@@ -19,10 +19,10 @@ var tileFormatter = new function () {
                 canvasDiv.html('');
 
                 //Render canvas
-                //var size = tileDiv.data().scenes[0].size;
+                //var size = tileDiv.data().scenes[sceneId].size;
                 var heightMultiplier = (size == 1) ? .55 : .72;
-                var width = tileDiv.data().scenes[0].width * .94;
-                var height = tileDiv.data().scenes[0].height * heightMultiplier;
+                var width = tileDiv.data().scenes[sceneId].width * .94;
+                var height = tileDiv.data().scenes[sceneId].height * heightMultiplier;
                 var json = tileDiv.data().tileData;
                 renderCanvas(canvasDiv, width, height, json.AltColor, json, json.PositionProgress);
             }
@@ -53,7 +53,7 @@ var tileFormatter = new function () {
                     values.push(tileDiv.data().tileData.Goals_Forw);
                     labels.push(tileDiv.data().tileData.Goals_Forw + ' goles \r\n Del.');
 
-                    raphael(namePieDiv, 300, 400).pieChart(130, tileDiv.data().scenes[0].top + 80, 50, values, labels, "#fff");
+                    raphael(namePieDiv, 300, 400).pieChart(130, tileDiv.data().scenes[sceneId].top + 80, 50, values, labels, "#fff");
                 }
             }
         }
@@ -158,12 +158,12 @@ var tileFormatter = new function () {
         return [xMin, xMax, yMin, yMax];
     };
 
-    formatVideo = function (tileDiv) {
+    formatVideo = function (tileDiv, sceneId) {
 
         // verify the video feature availability
         if (!Modernizr.video) return;
         
-        var scene = tileDiv.data().scenes[0];
+        var scene = tileDiv.data().scenes[sceneId];
         var player = $('#VideoPlayer');
         var videoRatio = 2.43;
         var videoHeight = Math.round(scene.height * .75);
