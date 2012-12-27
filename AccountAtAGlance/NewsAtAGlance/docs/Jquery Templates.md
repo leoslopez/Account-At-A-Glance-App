@@ -38,7 +38,7 @@ Con el template tag: "${Source}" se indica que la **data** pasada por parametro 
 **Se puede bindear de esta forma ya sea el _value_ de un span como la property _ref_ en un anchor _&lt;a id="lnkNews" href="${Url}"_, el _source_ de una imagen, los ids de elementos html, etc.**
 Ver documentación para los varios template tags: [${}](http://api.jquery.com/template-tag-equal), [{{each}}](http://api.jquery.com/template-tag-each), [{{if}}](http://api.jquery.com/template-tag-if), [{{else}}](http://api.jquery.com/template-tag-else), [{{html}}](http://api.jquery.com/template-tag-html), [{{tmpl}}](http://api.jquery.com/template-tag-tmpl) [{{wrap}}](http://api.jquery.com/template-tag-wrap).
 
-6. El método _$.tmpl()_ retorna una  _jQuery collection_ y es diseñado para encadenar con .appendTo, .prependTo, .insertAfter or .insertBefore, como en este ejemplo: _$.tmpl( "_&lt;li>${Name}_&lt;/li>", { "Name" : "John Doe" }).appendTo( "#target" )_.
+6. El método _$.tmpl()_ retorna una  _jQuery collection_ y es diseñado para encadenar con .appendTo, .prependTo, .insertAfter or .insertBefore, como en este ejemplo: _$.tmpl( "&lt;li>${Name}&lt;/li>", { "Name" : "John Doe" }).appendTo( "#target" )_.
 **En la app**, el valor retornado por este método , se utilizó de la siguiente manera: _tileDiv.html(template)_ (Para el div del tile en cuestión se define la property **html** usando el **template**).
 
 ###Conclusión
