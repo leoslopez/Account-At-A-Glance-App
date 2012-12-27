@@ -6,7 +6,7 @@
 _(Generalmente todos los browsers que soportan el tag de HTML5 canvas soportan el uso del plugin)_
 
 ###Uso básico
-1. Crear un div contenedor para poner el gráfico _&lt;div id="placeholder">&lt;/div>_.
+1. Crear un div contenedor para poner el gráfico: _&lt;div id="placeholder">&lt;/div>_.
 
 2. Se necesita definir el ancho y el alto del div porque sino la librería de ploteado no sabe manejar la escala del gráfico: _&lt;div id="placeholder" style="width:600px;height:300px">&lt;/div>_
 
@@ -29,7 +29,7 @@ tileDiv.data().tileData.GraphName);_
 
 3. Luego se invoca a la función _renderCanvas_ pasandole este div previamente obtenido (más otros valores como la data a bindear, ancho, alto, etc): _renderCanvas(canvasDiv, width, height, json.AltColor, json, json.PositionProgress);_
 
-4. Dentro de _renderCanvas_ lo que hacemos es armar el arreglo de puntos a bindear (_points_), definimos un objeto chartOptions que son los settings para customizar la gráfica: 
+4. Dentro de _renderCanvas_ lo que hacemos es armar el arreglo de puntos a bindear ( _points_ ), definimos un objeto chartOptions que son los settings para customizar la gráfica: 
 
                 _var chartOptions = {
                 series: {
