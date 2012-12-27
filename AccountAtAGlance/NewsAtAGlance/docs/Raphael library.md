@@ -7,7 +7,7 @@ Si se quiere crear un determinado gráfico y rotarlo, por ejemplo, debiera ser al
 
 ##Uso en News At A Glance
 ###Situación planteada
-Realizar una gráfica de torta con los porcentajes de las cantidades de goles hecho de las diferentes lineas de un equipo de fútbol (arquero, defensores, mediocampistas y delanteros).
+Realizar una gráfica de torta con los porcentajes de las cantidades de goles hechos de las diferentes lineas de un equipo de fútbol (arquero, defensores, mediocampistas y delanteros).
 
 ###Solución usando el plugin
 1. Descargar e incluir en el proyecto la librería [Raphael](https://raw.github.com/DmitryBaranovskiy/raphael/master/raphael-min.js).
@@ -16,9 +16,9 @@ Realizar una gráfica de torta con los porcentajes de las cantidades de goles hec
 
 3. Ya en el código relacionado a la app, definir en el archivo de [templates](https://github.com/leoslopez/Account-At-A-Glance-App/blob/master/AccountAtAGlance/NewsAtAGlance/docs/Jquery%20Templates.md) de equipos ( _Team.html_ ), en el template de tamaño medium, el siguiente div contendor de la gráfica: _&lt;div id="goalsPieSVG${GraphName}" class="goalsPieDiv" />_.
 
-4. Luego, en la función _formatTeams_ del archivo _scene.tile.formatter.js_ se obtiene ese div: _var namePieDiv = 'goalsPieSVG' + tileDiv.data().tileData.GraphName;_
+4. En la función _formatTeams_ del archivo _scene.tile.formatter.js_ se obtiene ese div: _var namePieDiv = 'goalsPieSVG' + tileDiv.data().tileData.GraphName;_
 
-5. Por último, en esa misma función, _formatTeams_, se hace lo siguiente:
+5. Luego, en esa misma función, _formatTeams_, se hace lo siguiente:
 
                     values.push(tileDiv.data().tileData.Goals_GK);
                     labels.push(tileDiv.data().tileData.Goals_GK + ' goles \r\n Arq.');
